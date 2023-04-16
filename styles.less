@@ -278,6 +278,7 @@ body {
         padding: 0 97px;
         gap: 48px;
         top: -75px;
+        align-items: flex-start;
 
         li {
           flex-direction: row;
@@ -321,6 +322,94 @@ body {
     &__footer {
       margin-top: 200px;
       padding-bottom: 121px;
+    }
+  }
+}
+
+// Desktop
+@media (min-width: 1440px) {
+  .workit {
+    &__header {
+      padding: 56px 165px 326px 165px;
+      align-items: center;
+    }
+
+    &__nav {
+      width: 100%;
+      max-width: 1110px;
+    }
+
+    &__main-title {
+      max-width: 635px;
+
+      h1 {
+        padding: 0;
+        font-size: 80px;
+        line-height: 80px;
+      }
+    }
+
+    &__hero-img {
+      width: 767px;
+      top: -260px;
+    }
+
+    &__list {
+      padding-bottom: 0;
+
+      ul {
+        max-width: 1114px;
+        flex-direction: row;
+        gap: 26px;
+        top: -175px;
+
+        li {
+          flex-direction: column;
+          gap: 56px;
+
+          span {
+            margin-bottom: 0;
+          }
+
+          div,
+          p {
+            text-align: center;
+          }
+
+          h2 {
+            font-size: 32px;
+            line-height: 40px;
+          }
+
+          p {
+            font-size: 18px;
+            line-height: 32px;
+          }
+        }
+      }
+    }
+
+    &__founder {
+      justify-content: center;
+      max-width: 1112px;
+      margin: 0 auto;
+
+      img {
+        width: 477px;
+      }
+
+      div {
+        padding: 64px;
+      }
+
+      h3 {
+        font-size: 56px;
+        line-height: 64px;
+      }
+
+      p {
+        font-size: 18px;
+      }
     }
   }
 }

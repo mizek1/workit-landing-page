@@ -114,6 +114,10 @@ body {
         align-items: center;
         justify-content: center;
 
+        div {
+          text-align: center;
+        }
+
         span {
           display: flex;
           align-items: center;
@@ -245,6 +249,78 @@ body {
 
     &:hover {
       color: @eucaliptus;
+    }
+  }
+}
+
+// Tablet
+@media (min-width: 768px) {
+  .workit {
+    &__header {
+      padding: 32px 40px 200px 40px;
+    }
+
+    &__main-title {
+      h1 {
+        padding: 0 108px;
+        font-size: 60px;
+        line-height: 60px;
+      }
+    }
+
+    &__hero-img {
+      width: 512px;
+      top: -140px;
+    }
+
+    &__list {
+      ul {
+        padding: 0 97px;
+        gap: 48px;
+        top: -75px;
+
+        li {
+          flex-direction: row;
+          gap: 32px;
+          align-items: center;
+          justify-content: space-between;
+
+          div,
+          p {
+            text-align: left;
+          }
+
+          span {
+            flex-shrink: 0;
+          }
+        }
+      }
+    }
+
+    &__founder {
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 100px 40px 0 40px;
+
+      div {
+        position: relative;
+        top: 151px;
+        left: -106px;
+        text-align: left;
+        padding: 48px 56px 56px 56px;
+        min-width: 375px;
+
+        h3 {
+          font-size: 48px;
+          line-height: 56px;
+        }
+      }
+    }
+
+    &__footer {
+      margin-top: 200px;
+      padding-bottom: 121px;
     }
   }
 }
